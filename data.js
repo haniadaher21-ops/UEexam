@@ -771,6 +771,166 @@ const QUESTIONS = [
     answer: 1,
     explanation: "Conseil européen du 21 juillet 2020 : adoption de NextGenerationEU (750 Md€). Première rupture historique avec le tabou de la dette commune — les Allemands acceptent pour la 1ère fois une « union de transferts »."
   },
+
+  // === AUTONOMIE INDUSTRIELLE — nouvelles questions ===
+  {
+    theme: "industrie",
+    question: "Quel rapport de septembre 2024 appelle à 800 Md€ d'investissements supplémentaires annuels pour la compétitivité européenne ?",
+    options: ["Rapport Letta", "Rapport Draghi", "Rapport Wieser", "Rapport Moscovici"],
+    answer: 1,
+    explanation: "Le Rapport Draghi (sept. 2024) dresse un diagnostic alarmé sur le décrochage de la compétitivité européenne face aux États-Unis et à la Chine, et appelle à 800 Md€ d'investissements supplémentaires annuels en innovation, défense et transition verte."
+  },
+  {
+    theme: "industrie",
+    question: "Quel pays a proposé un « Buy European Act » sur le modèle du Buy American Act ?",
+    options: ["L'Allemagne", "L'Italie", "La France", "L'Espagne"],
+    answer: 2,
+    explanation: "La France a proposé un « Buy European Act » visant à favoriser les produits européens dans les marchés publics, sur le modèle du Buy American Act américain. La proposition n'a pas fait l'unanimité au sein de l'UE."
+  },
+  {
+    theme: "industrie",
+    question: "Quelle proportion de la valeur d'un véhicule électrique réside dans sa batterie, créant une dépendance structurelle à la Chine ?",
+    options: ["20 %", "30 %", "40 %", "55 %"],
+    answer: 2,
+    explanation: "40 % de la valeur d'un VE réside dans sa batterie. Or 6 des 10 premiers producteurs mondiaux de batteries pour VE sont chinois (56 % de part de marché) — dépendance stratégique majeure pour l'UE."
+  },
+  {
+    theme: "industrie",
+    question: "En quelle année a été créé l'Institut européen d'innovation et de technologie (IET) ?",
+    options: ["2000", "2004", "2008", "2012"],
+    answer: 2,
+    explanation: "L'Institut européen d'innovation et de technologie (IET) a été créé en 2008. Il vise à stimuler l'innovation en reliant enseignement supérieur, recherche et entreprises (triangle de la connaissance)."
+  },
+  {
+    theme: "industrie",
+    question: "Quel est le principal outil de financement de la recherche et de l'innovation européenne avec un budget de 95,5 Md€ (2021-2027) ?",
+    options: ["ESPRIT", "Horizon 2020", "Horizon Europe", "Digital Europe"],
+    answer: 2,
+    explanation: "Horizon Europe (lancé le 1er janvier 2021) : 95,5 Md€ pour 2021-2027 — principal programme de R&I de l'UE, succédant à 7 programmes-cadres depuis 1984."
+  },
+  {
+    theme: "industrie",
+    question: "Quels sont les 2 défis centraux identifiés par le Rapport Draghi pour l'Europe ?",
+    options: ["Énergie et migration", "Innovation (rattraper le retard technologique) et industrie (en déclin)", "Défense et numérique", "Budget et gouvernance"],
+    answer: 1,
+    explanation: "Le Rapport Draghi (2024) identifie deux défis centraux : (1) l'innovation — rattraper le retard technologique face aux US et à la Chine ; (2) l'industrie — enrayer le déclin industriel européen."
+  },
+  {
+    theme: "industrie",
+    question: "Quel programme numérique doté de 7,6 Md€ soutient la transition numérique européenne pour 2021-2027 ?",
+    options: ["Horizon Europe", "Digital Europe Programme", "Connecting Europe Facility", "InvestEU"],
+    answer: 1,
+    explanation: "Le programme Digital Europe (7,6 Md€ pour 2021-2027) soutient les investissements dans la transition numérique : IA, cloud, cybersécurité, compétences numériques et déploiement d'infrastructures."
+  },
+  {
+    theme: "industrie",
+    question: "Pourquoi l'ADN européen est-il décrit comme « anti-puissance » dans le contexte de l'autonomie stratégique ?",
+    options: ["L'UE n'a pas d'armée propre", "Le projet européen a été fondé sur le rejet des logiques de puissance (nationalisme = guerre)", "Les États membres s'y opposent tous", "Le traité de Lisbonne l'interdit explicitement"],
+    answer: 1,
+    explanation: "Le projet européen, fondé sur la paix et la réconciliation post-1945, est fondamentalement hostile aux politiques de puissance. Agir comme une puissance n'est pas naturel pour l'UE — tous ses outils sont conçus pour l'interdépendance, pas la compétition géopolitique."
+  },
+
+  // === GREEN DEAL & NUMÉRIQUE — nouvelles questions ===
+  {
+    theme: "climat",
+    question: "En quelle année le titre sur l'environnement a-t-il été ajouté aux traités européens ?",
+    options: ["1972", "1979", "1986", "1992"],
+    answer: 2,
+    explanation: "L'Acte unique européen (1986) est le premier traité à ajouter un titre sur l'environnement. Avant cela, le Traité de Rome (1957) ne contenait aucune disposition environnementale."
+  },
+  {
+    theme: "climat",
+    question: "Quel est le coût annuel d'investissement nécessaire pour respecter les objectifs Fit for 55 ?",
+    options: ["400 Md€/an", "700 Md€/an", "1 100 Md€/an", "2 000 Md€/an"],
+    answer: 2,
+    explanation: "1 100 Md€ doivent être investis annuellement pour respecter les objectifs Fit for 55 — une impasse à la fois politique et financière, qui explique les tensions autour du Green Deal."
+  },
+  {
+    theme: "climat",
+    question: "Quel est le numéro du programme d'action pour l'environnement en cours (2021-2030) ?",
+    options: ["6e", "7e", "8e", "9e"],
+    answer: 2,
+    explanation: "L'UE s'est dotée de son 8e programme d'action pour l'environnement (2021-2030), avec 6 objectifs prioritaires dont la réduction des GES et la protection de la biodiversité."
+  },
+  {
+    theme: "climat",
+    question: "Quel risque social lié à la transition climatique est évoqué comme scénario à éviter ?",
+    options: ["Exode rural massif", "Désindustrialisation accélérée", "Des « gilets jaunes européens »", "Montée du chômage technologique"],
+    answer: 2,
+    explanation: "Le coût social de la transition climatique est insuffisamment appréhendé — risque de provoquer des « gilets jaunes européens » si la transition n'est pas socialement juste. Le Fonds Social Climat (86,7 Md€) tente d'y répondre."
+  },
+  {
+    theme: "climat",
+    question: "Quel Livre blanc de 2020 vise à créer un écosystème européen d'excellence et de confiance autour de l'IA ?",
+    options: ["Livre blanc sur la défense", "Livre blanc sur l'IA", "Livre blanc sur le numérique", "Livre blanc sur l'avenir de l'Europe"],
+    answer: 1,
+    explanation: "Livre blanc sur l'IA (2020) : la Commission propose de créer un écosystème d'excellence et de confiance européen, articulant innovation et régulation — troisième voie face aux modèles US (innovation sans contraintes) et chinois (contrôle étatique)."
+  },
+  {
+    theme: "climat",
+    question: "Quelle est la « troisième voie » européenne dans la régulation de l'IA face aux modèles américain et chinois ?",
+    options: ["Interdire toute IA générative", "Créer une agence mondiale de l'IA", "Régulation par les risques + promotion de l'innovation (AI Act)", "Nationalisation des systèmes d'IA stratégiques"],
+    answer: 2,
+    explanation: "L'AI Act (2024) incarne la troisième voie européenne : régulation par les risques (interdiction, haut risque, IA générative, risque limité) sans bloquer l'innovation — face au modèle US (innovation sans contraintes) et chinois (contrôle étatique)."
+  },
+  {
+    theme: "climat",
+    question: "Quel Sommet international de 1992 marque le début des engagements climatiques européens dans le cadre de la CCNUCC ?",
+    options: ["Sommet de Paris (1972)", "Sommet de Rio (1992)", "Protocole de Kyoto (1997)", "COP21 de Paris (2015)"],
+    answer: 1,
+    explanation: "Sommet de Rio (1992) : création de la CCNUCC (Convention-cadre des Nations unies sur les changements climatiques). Suivi du Protocole de Kyoto (1997) et de la mise en place du SEQE (ETS) en 2005."
+  },
+
+  // === SCÉNARIOS D'AVENIR — nouvelles questions ===
+  {
+    theme: "avenir",
+    question: "Quel pourcentage de la population européenne vit sous le seuil de pauvreté selon le Rapport Draghi ?",
+    options: ["10 %", "15 %", "20 %", "25 %"],
+    answer: 2,
+    explanation: "20 % de la population européenne vit sous le seuil de pauvreté (Rapport Draghi). Le coefficient de Gini de l'UE est de 30 — ces inégalités nourrissent le discours populiste et l'euroscepticisme."
+  },
+  {
+    theme: "avenir",
+    question: "Quelle sera approximativement la population française en 2040 ?",
+    options: ["65 millions", "67 millions", "69,2 millions", "72 millions"],
+    answer: 2,
+    explanation: "69,2 millions d'habitants en France en 2040 (+2 M vs aujourd'hui), essentiellement grâce à l'immigration. Le vieillissement démographique est un défi structurel majeur, surtout en Europe de l'Est et du Sud."
+  },
+  {
+    theme: "avenir",
+    question: "Quelles sont les conditions du Scénario 1 (Europe forte) pour l'avenir de l'UE ?",
+    options: ["Un accord commercial avec les US et la Chine", "Une convergence politique entre France, Allemagne, Pologne et États membres pro-européens", "L'élargissement à l'Ukraine d'ici 2030", "Un budget européen à 3 % du RNB"],
+    answer: 1,
+    explanation: "Le Scénario 1 (Europe forte) est conditionné à une convergence politique entre la France, l'Allemagne, la Pologne et les États membres pro-européens — renforcement de la défense, réformes institutionnelles, élargissement couplé à la majorité qualifiée."
+  },
+  {
+    theme: "avenir",
+    question: "Quel concept résume l'ambition nécessaire pour les dirigeants européens en faveur de l'intégration ?",
+    options: ["Euro-réalisme", "Euro-scepticisme constructif", "Euro-volontarisme", "Fédéralisme pragmatique"],
+    answer: 2,
+    explanation: "L'euro-volontarisme : « On ne peut pas faire avancer l'Europe avec des discours timides — il faut être euro-volontariste. La France, pays fondateur, a un rôle clé à jouer. » Le leadership des dirigeants est présenté comme facteur déterminant de l'avenir européen."
+  },
+  {
+    theme: "avenir",
+    question: "Quels sont les 4 défis structurels identifiés pour l'avenir de l'UE ?",
+    options: ["Défense, agriculture, numérique, énergie", "Langage de la puissance, défi éco/social/climatique, défi démocratique, croissance et souveraineté", "Migration, Brexit, État de droit, euroscepticisme", "Budget, élargissement, institutions, frontières"],
+    answer: 1,
+    explanation: "4 défis : (1) apprendre le langage de la puissance (Borrell), (2) défi économique, social et climatique (inégalités, vieillissement), (3) défi démocratique (désinformation, guerres hybrides), (4) défi de la croissance et de la souveraineté (réduire les dépendances)."
+  },
+  {
+    theme: "avenir",
+    question: "Quel est le Scénario 3 (noir) pour l'avenir de l'UE ?",
+    options: ["Statu quo avec légère intégration", "Retrait britannique suivi d'autres États", "Crises internes et externes combinées : montée du populisme, isolement, retour en arrière chaotique", "Élargissement massif sans réforme institutionnelle"],
+    answer: 2,
+    explanation: "Scénario 3 (noir) : les crises internes et externes se combinent pour fragiliser la stabilité européenne. Montée de l'extrême droite, isolement international, retour en arrière chaotique — l'Europe pourrait devenir une cible face à des prédateurs."
+  },
+  {
+    theme: "avenir",
+    question: "Quelle nouvelle réalité géopolitique contraint l'UE à clarifier ses priorités stratégiques depuis janvier 2025 ?",
+    options: ["L'adhésion de l'Ukraine à l'OTAN", "Le retour de Donald Trump à la Maison-Blanche", "La montée en puissance de la Turquie", "La crise des semi-conducteurs"],
+    answer: 1,
+    explanation: "Le retour de Donald Trump à la Maison-Blanche (janvier 2025) contraint l'UE à clarifier ses priorités : remise en cause de l'OTAN, pression tarifaire, affaiblissement du multilatéralisme, préférence pour les accords bilatéraux de puissance."
+  },
 ];
 
 // ---- DISSERTATIONS : 10 SUJETS ----------------------------
@@ -1065,6 +1225,93 @@ const DISSERTATIONS = [
     ],
     citations: ["Budget UE = 1 % du RNB vs 40 % pour les États nationaux", "NextGenerationEU : « rupture qualitative mais pas encore un Hamilton Moment » — Moscovici", "5 nouvelles ressources propres CFP 2028-2034 : ~58,5 Md€/an estimés"]
   },
+  {
+    titre: "L'Europe peut-elle rattraper son retard industriel et technologique face aux États-Unis et à la Chine ?",
+    theme: "Autonomie industrielle",
+    intro: "« L'Europe doit apprendre le langage de la puissance » (Borrell). Aucun géant technologique européen face aux GAFAM américains et BATX chinois, 6 des 10 premiers producteurs de batteries VE sont chinois, 137 produits en dépendance critique identifiés par la Commission — le constat du Rapport Draghi (2024) est alarmant. L'UE dispose pourtant d'atouts réels : le plus grand marché unique mondial, un capital humain de qualité, une épargne abondante. Comment transformer ces atouts en autonomie industrielle et technologique ?",
+    parties: [
+      {
+        titre: "I. Le diagnostic : un retard structurel aux racines multiples",
+        sousparties: [
+          { titre: "A. Les vulnérabilités mises en évidence", points: ["Aucun GAFAM européen : fragmentation des marchés nationaux empêche l'émergence de géants tech", "Dépendance aux batteries chinoises : 6/10 premiers producteurs mondiaux, 56 % de PDM, 40 % de la valeur d'un VE", "137 produits identifiés en dépendance critique (6 % des importations) : semi-conducteurs, terres rares, médicaments", "Domaine financier : prééminence du dollar, marchés financiers dominés par les US"] },
+          { titre: "B. Les causes profondes", points: ["L'ADN anti-puissance de l'UE : projet fondé sur la paix, pas sur la compétition stratégique", "Gouvernance fragmentée : seuls certains pans de la politique économique sont conduits à l'échelle européenne", "Retard dans l'investissement en R&D, fragmentation des marchés de capitaux (paradoxe européen : épargne élevée, sous-investissement)"] }
+        ]
+      },
+      {
+        titre: "II. Les outils déployés pour l'autonomie stratégique",
+        sousparties: [
+          { titre: "A. Politique de R&I et innovation", points: ["Horizon Europe (95,5 Md€, 2021-2027) : principal outil de financement", "IET (Institut européen d'innovation et de technologie, 2008)", "Programme Digital Europe (7,6 Md€) : transition numérique, IA, cloud, cybersécurité", "AI Act (2024) : 1ère régulation mondiale par les risques — troisième voie entre US et Chine"] },
+          { titre: "B. Politique industrielle et contrôle des dépendances", points: ["Net Zero Industry Act (2024) : 40 % des technologies vertes produites en UE d'ici 2030", "Chips Act (2023) : 43 Md€, objectif 20 % de la production mondiale de semi-conducteurs", "CRM Act (2024) : 10 % extraction, 40 % transformation, 25 % recyclage en UE", "Mécanisme filtrage IDE (2019/2020), Foreign Subsidies Regulation (2023)"] }
+        ]
+      },
+      {
+        titre: "III. Les conditions d'une véritable autonomie industrielle",
+        sousparties: [
+          { titre: "A. Réformer la gouvernance économique européenne", points: ["Union de l'Épargne et de l'Investissement (UEI) : mobiliser les 12 % d'épargne disponible", "Consolider les universités européennes, réformer les brevets (brevet unitaire)", "Renforcer les programmes de financement, stimuler l'investissement privé en capital-risque", "Rapport Draghi : 800 Md€/an d'investissements supplémentaires nécessaires"] },
+          { titre: "B. L'équilibre entre ouverture et protection", points: ["Autonomie ≠ protectionnisme : ne pas abandonner le libre-échange ni la relation transatlantique", "« Derisking » sans découplage total de la Chine (1er partenaire commercial, 16 % des échanges)", "Buy European Act (proposition française) : favoriser les produits européens dans les marchés publics", "Agir de manière autonome quand c'est nécessaire, avec des partenaires quand c'est possible"] }
+        ]
+      }
+    ],
+    citations: ["« L'Europe doit apprendre le langage de la puissance » — Josep Borrell", "Rapport Draghi (2024) : 800 Md€ d'investissements supplémentaires annuels nécessaires", "6 des 10 premiers producteurs de batteries VE sont chinois (56 % de PDM) — vulnérabilité structurelle"]
+  },
+  {
+    titre: "L'UE peut-elle réussir sa double transition climatique et numérique ?",
+    theme: "Green Deal & Numérique",
+    intro: "L'Union européenne s'est fixé des objectifs climatiques parmi les plus ambitieux au monde (neutralité carbone en 2050, -55 % d'émissions en 2030) et entend faire de la décennie 2020-2030 sa « Digital Decade ». Pourtant, le « green backlash » de 2024 (chute des Verts, Commission la plus à droite de l'histoire) et le retard technologique chronique face aux GAFAM et BATX posent une question centrale : l'UE peut-elle simultanément tenir ses engagements climatiques, rattraper son retard numérique et maintenir sa compétitivité économique ?",
+    parties: [
+      {
+        titre: "I. Des ambitions pionnières confrontées à des résistances croissantes",
+        sousparties: [
+          { titre: "A. Le Green Deal : ambition maximale et « green backlash »", points: ["Loi européenne sur le climat (2021) : objectifs juridiquement contraignants pour 2030 et 2050", "Fit for 55 : 5 directives + 8 règlements, interdiction véhicules thermiques (2035), ETS réformé, CBAM", "Green backlash : Verts passent de 72 à 53 sièges en 2024 ; Commission von der Leyen II = 44 % PPE", "1 100 Md€/an d'investissements nécessaires pour Fit for 55 → impasse financière"] },
+          { titre: "B. Le retard numérique : une décennie perdue ?", points: ["Aucun GAFAM européen, retard sur l'IA face aux US et à la Chine", "L'UE a loupé le tournant des années 2010 : régulation tardive seulement à partir de 2020", "Dépendance cloud structurelle vis-à-vis des États-Unis", "RGPD (2018) : succès normatif mondial mais frein perçu à l'innovation"] }
+        ]
+      },
+      {
+        titre: "II. Les outils de rattrapage déployés",
+        sousparties: [
+          { titre: "A. La transition climatique : instruments complémentaires", points: ["REPowerEU (mai 2022) : sortir du gaz russe d'ici 2027, ENR portés à 45 % en 2030", "CBAM (oct. 2023) : protection contre la délocalisation des émissions, plein effet 2026", "Net Zero Industry Act (2024) : 40 % des technologies vertes produits en UE d'ici 2030", "Fonds Social Climat (86,7 Md€) : accompagner les ménages vulnérables dans la transition"] },
+          { titre: "B. La transition numérique : bâtir un modèle européen", points: ["DSA (2022) : responsabilité des plateformes, modération, lutte contre la désinformation", "DMA (2022) : mettre fin à la domination des « gatekeepers » (Apple, Google, Meta, Amazon…)", "AI Act (2024) : première régulation mondiale de l'IA, approche par les risques", "Chips Act (43 Md€) : 20 % de la production mondiale de semi-conducteurs en 2030"] }
+        ]
+      },
+      {
+        titre: "III. Les conditions d'une double transition réussie",
+        sousparties: [
+          { titre: "A. Articuler transition et compétitivité", points: ["Rapport Draghi : sans financement massif (800 Md€/an), pas de transition réussie", "Union de l'Épargne et de l'Investissement : mobiliser l'épargne privée pour financer la transition", "CFP 2028-2034 : recettes ETS et CBAM comme nouvelles ressources propres (~11 Md€/an)"] },
+          { titre: "B. Éviter les pièges : dépendances, coût social, backlash", points: ["Risque de nouvelles dépendances : terres rares chinoises, panneaux solaires, batteries", "Coût social mal appréhendé → risque de « gilets jaunes européens »", "L'UE doit montrer que transitions climatique et numérique sont compatibles avec emploi et prospérité"] }
+        ]
+      }
+    ],
+    citations: ["Fit for 55 : 1 100 Md€/an nécessaires — impasse politique et financière", "AI Act (2024) : 1ère régulation mondiale de l'IA — modèle européen face aux modèles US et chinois", "REPowerEU : sortir du gaz russe d'ici 2027, ENR à 45 % en 2030"]
+  },
+  {
+    titre: "Quels scénarios pour l'avenir de l'Union européenne ?",
+    theme: "Euroscepticisme & Avenir",
+    intro: "Le projet européen a été fondé sur un idéal : créer une paix perpétuelle sur le continent. Aujourd'hui, l'UE fait face à un faisceau de crises simultanées — guerre en Ukraine, retour de Trump, montée de l'extrême droite, décrochage économique, crise de l'État de droit — qui dessinent trois scénarios possibles : une Europe plus forte, un enlisement gris, ou un effondrement chaotique. L'avenir se jouera sur des facteurs politiques : le leadership des dirigeants, la situation économique et la capacité à transformer les crises en opportunités.",
+    parties: [
+      {
+        titre: "I. Les réponses stratégiques engagées depuis 2024",
+        sousparties: [
+          { titre: "A. Les grandes initiatives récentes", points: ["Rapport Draghi (sept. 2024) : 800 Md€/an d'investissements supplémentaires, diagnostic alarmant sur la compétitivité", "Plan ReArm Europe / SAFE (mars 2025) : 150 Md€ pour l'industrie de défense, potentiel de 800 Md€", "CFP 2028-2034 : 5 nouvelles ressources propres, fonds de compétitivité, flexibilité accrue"] },
+          { titre: "B. Le contexte politique contraignant", points: ["Retour de Trump (jan. 2025) : remise en cause OTAN, pression tarifaire, préférence pour les accords de puissance", "~200 eurodéputés d'extrême droite sur 720 : Patriotes (86), ECR (78), ENS", "20 % de la population européenne sous le seuil de pauvreté (Gini = 30) → terreau du populisme"] }
+        ]
+      },
+      {
+        titre: "II. Les 4 défis structurels à surmonter",
+        sousparties: [
+          { titre: "A. Puissance et souveraineté", points: ["Apprendre le langage de la puissance : fin de la guerre en Ukraine, européaniser l'OTAN, parler d'une seule voix", "Réduire les dépendances : gaz russe, parapluie nucléaire US, matières premières critiques, cloud, médicaments", "Décrochage économique : PIB/tête 73 % des US (vs 90 % en 2001), croissance 2x inférieure"] },
+          { titre: "B. Démocratie, cohésion et démographie", points: ["Défi démocratique : désinformation, ingérence électorale, guerre des modèles, liberté de la presse", "Fossés socio-économiques : inégalités nourrissent le discours populiste et l'euroscepticisme", "Démographie : vieillissement (Europe Est/Sud), immigration indispensable au maintien de la population active"] }
+        ]
+      },
+      {
+        titre: "III. Les trois scénarios d'avenir",
+        sousparties: [
+          { titre: "A. Scénario 1 (Fort) et Scénario 2 (Gris)", points: ["Scénario 1 (Europe forte) : coalition pro-européenne, défense européenne, élargissement + réformes institutionnelles (MQ), harmonisation fiscale → conditionné à la convergence FR/DE/PL", "Scénario 2 (Gris) : immobilisation sans effondrement, zone instable mais résistante → probable si intérêts nationaux restent divergents"] },
+          { titre: "B. Scénario 3 (Noir) et la voie de sortie", points: ["Scénario 3 (Noir) : crises internes + externes combinées, montée du populisme, isolement, retour en arrière chaotique — l'Europe devient une cible", "La voie de sortie : l'euro-volontarisme — « on ne peut pas faire avancer l'Europe avec des discours timides »", "La France, pays fondateur, a un rôle clé à jouer dans le leadership européen"] }
+        ]
+      }
+    ],
+    citations: ["« On ne peut pas faire avancer l'Europe avec des discours timides — il faut être euro-volontariste »", "Rapport Draghi (2024) : 800 Md€/an d'investissements supplémentaires nécessaires", "« L'Europe doit apprendre le langage de la puissance » — Borrell"]
+  },
 ];
 
 // ---- CITATIONS : 20 -----------------------------------
@@ -1188,5 +1435,23 @@ const CITATIONS = [
     author: "Pierre Moscovici",
     context: "Définit l'hybridité unique de l'UE : structure hybride, constellation d'États, interface entre le national et l'international.",
     distractors: ["Jacques Delors", "Jean Monnet", "Jürgen Habermas"]
+  },
+  {
+    quote: "On ne peut pas faire avancer l'Europe avec des discours timides — il faut être euro-volontariste.",
+    author: "Pierre Moscovici",
+    context: "Conclusion du cours sur les scénarios d'avenir. La France, pays fondateur, a un rôle clé à jouer.",
+    distractors: ["Emmanuel Macron", "Jacques Delors", "Jean-Claude Juncker"]
+  },
+  {
+    quote: "Sans Union des Marchés de Capitaux fonctionnelle, pas de financement massif de l'innovation, de la défense et de la transition verte en Europe.",
+    author: "Mario Draghi",
+    context: "Rapport Draghi (septembre 2024) : diagnostic alarmé sur la compétitivité européenne, appel à 800 Md€/an d'investissements supplémentaires.",
+    distractors: ["Christine Lagarde", "Enrico Letta", "Ursula von der Leyen"]
+  },
+  {
+    quote: "L'Europe, fondée sur le multilatéralisme depuis sa création, doit proposer une stratégie renouvelée pour affronter un contexte mondial en mutation.",
+    author: "Pierre Moscovici",
+    context: "Contexte de la rivalité sino-américaine et du retour des logiques de puissance — l'UE doit adapter ses outils.",
+    distractors: ["Josep Borrell", "Charles Michel", "Emmanuel Macron"]
   },
 ];
