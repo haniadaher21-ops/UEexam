@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Révision UE & Crises — Sciences Po</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a class="navbar-brand" onclick="showScreen('home')">
+      <span class="stars">★ ★ ★</span>
+      <span>UE &amp; Crises</span>
+    </a>
+    <ul class="navbar-links">
+      <li><button class="nav-btn active" data-screen="home"    onclick="showScreen('home')">🏠 Accueil</button></li>
+      <li><button class="nav-btn"        data-screen="qcm"     onclick="showScreen('qcm')">📝 QCM</button></li>
+      <li><button class="nav-btn"        data-screen="diss"    onclick="showScreen('diss')">✍️ Dissertations</button></li>
+      <li><button class="nav-btn"        data-screen="cit"     onclick="showScreen('cit')">💬 Qui a dit ça ?</button></li>
+      <li><button class="nav-btn"        data-screen="stats"   onclick="showScreen('stats')">📊 Stats</button></li>
+    </ul>
+    <div class="navbar-score" id="navbar-score">⭐ 0 pts</div>
+  </nav>
+
+  <!-- ===== SCREEN : ACCUEIL ===== -->
+  <div id="screen-home" class="screen active">
+    <div class="hero">
+      <span class="eu-circle">🇪🇺</span>
+      <h1>L'UE et ses <span>Crises</span></h1>
+      <p>Ton site de révision interactif — Sciences Po<br>
+         Basé sur ta fiche de 46 pages &amp; 9 parties</p>
+
+      <div class="hero-cards">
+        <div class="hero-card" onclick="showScreen('qcm')">
+          <span class="card-icon">📝</span>
+          <h3>QCM</h3>
+          <p>105 questions réparties en 9 thèmes. Réponse immédiate + explication.</p>
+          <span class="badge">105 questions</span>
+        </div>
+        <div class="hero-card" onclick="showScreen('diss')">
+          <span class="card-icon">✍️</span>
+          <h3>Dissertations</h3>
+          <p>10 sujets avec introduction, plan détaillé et citations mobilisables.</p>
+          <span class="badge">10 sujets</span>
+        </div>
+        <div class="hero-card" onclick="showScreen('cit')">
+          <span class="card-icon">💬</span>
+          <h3>Qui a dit ça ?</h3>
+          <p>20 citations clés. Retrouve l'auteur parmi 4 propositions.</p>
+          <span class="badge">20 citations</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte de progression rapide -->
+    <div class="container">
+      <div class="section-header">
+        <h2>📚 Les 9 parties du cours</h2>
+        <p>Clique sur un thème pour lancer directement un QCM ciblé</p>
+      </div>
+      <div class="parts-grid" id="parts-grid">
+        <!-- Injecté par app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN : QCM ===== -->
+  <div id="screen-qcm" class="screen">
+    <div class="container">
+
+      <!-- Setup -->
+      <div class="qcm-setup" id="qcm-setup">
+        <div class="section-header">
+          <h2>📝 QCM — Choisis un thème</h2>
+          <p>Filtre par partie du cours, ou mélange tout pour une révision complète</p>
+        </div>
+
+        <div class="qcm-controls">
+          <div class="theme-pills" id="theme-pills">
+            <!-- Injecté par app.js -->
+          </div>
+        </div>
+
+        <div class="qcm-controls" style="margin-top:0.5rem">
+          <button class="btn btn-gold" id="btn-start-qcm" onclick="startQCM()">
+            ▶ Commencer le QCM
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="selectAllThemes()">
+            Tout sélectionner
+          </button>
+          <span id="qcm-count-label" style="color:var(--gray-600);font-size:0.875rem;align-self:center"></span>
+        </div>
+      </div>
+
+      <!-- Game -->
+      <div class="qcm-game" id="qcm-game">
+        <div class="qcm-progress-bar-wrap">
+          <div class="qcm-progress-bar" id="qcm-progress-bar" style="width:0%"></div>
+        </div>
+        <div class="qcm-meta">
+          <span id="qcm-counter">Question 1 / 20</span>
+          <span class="qcm-score-badge" id="qcm-score-live">✅ 0 / ❌ 0</span>
+        </div>
+
+        <div class="question-card" id="question-card">
+          <span class="question-theme-tag" id="q-theme-tag"></span>
+          <p class="question-text" id="q-text"></p>
+          <div class="options-grid" id="options-grid">
+            <!-- Injecté par app.js -->
+          </div>
+          <div class="feedback-box" id="feedback-box">
+            <div class="feedback-header" id="feedback-header"></div>
+            <p class="feedback-text" id="feedback-text"></p>
+          </div>
+        </div>
+
+        <div class="qcm-nav">
+          <button class="btn btn-outline btn-sm" onclick="exitQCM()">⬅ Quitter</button>
+          <button class="btn" id="btn-next" onclick="nextQuestion()" disabled>
+            Suivant →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="qcm-results" id="qcm-results" style="display:none">
+        <div class="results-card">
+          <div class="score-circle" id="score-circle">
+            <span class="score-inner" id="score-inner">–</span>
+          </div>
+          <h3 id="results-title">Bien joué !</h3>
+          <p id="results-subtitle"></p>
+          <div class="results-actions">
+            <button class="btn btn-gold" onclick="retryQCM()">🔄 Recommencer</button>
+            <button class="btn btn-outline" onclick="retryMissed()" id="btn-retry-missed">
+              ⚡ Refaire les ratées
+            </button>
+            <button class="btn btn-outline" onclick="showScreen('stats')">📊 Voir les stats</button>
+            <button class="btn btn-outline" onclick="exitQCM()">⬅ Retour</button>
+          </div>
+          <div class="missed-questions" id="missed-questions"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== SCREEN : DISSERTATIONS ===== -->
+  <div id="screen-diss" class="screen">
+    <div class="container">
+      <div class="section-header">
+        <h2>✍️ Sujets de dissertation</h2>
+        <p>Plans détaillés avec introduction, transitions et citations mobilisables</p>
+      </div>
+      <div class="dissertations-grid" id="dissertations-grid">
+        <!-- Injecté par app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN : QUI A DIT ÇA ? ===== -->
+  <div id="screen-cit" class="screen">
+    <div class="container">
+
+      <!-- Setup citations -->
+      <div class="citations-setup" id="citations-setup">
+        <div class="section-header">
+          <h2>💬 Qui a dit ça ?</h2>
+          <p>20 citations clés. Retrouve l'auteur parmi 4 personnalités européennes.</p>
+        </div>
+        <div class="text-center mt-3">
+          <button class="btn btn-gold" onclick="startCitations()">▶ Lancer le jeu</button>
+        </div>
+      </div>
+
+      <!-- Game citations -->
+      <div class="citations-game" id="citations-game">
+        <div class="qcm-progress-bar-wrap">
+          <div class="qcm-progress-bar" id="cit-progress-bar" style="width:0%"></div>
+        </div>
+        <div class="qcm-meta">
+          <span id="cit-counter">Citation 1 / 20</span>
+          <span class="qcm-score-badge" id="cit-score-live">✅ 0 / ❌ 0</span>
+        </div>
+
+        <div class="citation-card-big" id="cit-card">
+          <p class="quote-text" id="cit-text"></p>
+          <p class="quote-context" id="cit-context"></p>
+        </div>
+
+        <div class="citation-options" id="citation-options">
+          <!-- Injecté par app.js -->
+        </div>
+
+        <div class="citation-feedback" id="citation-feedback">
+          <div class="citation-who" id="cit-who"></div>
+          <div class="citation-detail" id="cit-detail"></div>
+        </div>
+
+        <div class="qcm-nav">
+          <button class="btn btn-outline btn-sm" onclick="exitCitations()">⬅ Quitter</button>
+          <button class="btn" id="btn-cit-next" onclick="nextCitation()" disabled>
+            Suivant →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results citations -->
+      <div class="citations-results" id="citations-results" style="display:none">
+        <div class="results-card">
+          <div class="score-circle" id="cit-score-circle">
+            <span class="score-inner" id="cit-score-inner">–</span>
+          </div>
+          <h3 id="cit-results-title"></h3>
+          <p id="cit-results-subtitle"></p>
+          <div class="results-actions">
+            <button class="btn btn-gold" onclick="startCitations()">🔄 Recommencer</button>
+            <button class="btn btn-outline" onclick="exitCitations()">⬅ Retour</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== SCREEN : STATS ===== -->
+  <div id="screen-stats" class="screen">
+    <div class="container">
+      <div class="section-header">
+        <h2>📊 Mes statistiques</h2>
+        <p>Tes performances globales et les questions les plus souvent ratées</p>
+      </div>
+
+      <!-- Vide si pas encore de stats -->
+      <div id="stats-empty" class="empty-stats" style="display:none">
+        <span class="icon">🎯</span>
+        <p>Fais au moins un QCM pour voir tes stats !</p>
+        <button class="btn mt-2" onclick="showScreen('qcm')">📝 Aller au QCM</button>
+      </div>
+
+      <!-- Stats remplies -->
+      <div id="stats-content">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="stat-total">0</div>
+            <div class="stat-label">Questions répondues</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-number" id="stat-correct">0</div>
+            <div class="stat-label">Bonnes réponses</div>
+          </div>
+          <div class="stat-card red">
+            <div class="stat-number" id="stat-wrong">0</div>
+            <div class="stat-label">Mauvaises réponses</div>
+          </div>
+          <div class="stat-card gold">
+            <div class="stat-number" id="stat-pct">–</div>
+            <div class="stat-label">Taux de réussite</div>
+          </div>
+        </div>
+
+        <!-- Stats par thème -->
+        <div class="hardest-list" id="stats-by-theme" style="margin-bottom:2rem">
+          <h3>📁 Par thème</h3>
+          <div id="theme-stats-rows">
+            <!-- Injecté par app.js -->
+          </div>
+        </div>
+
+        <!-- Questions les plus ratées -->
+        <div class="hardest-list" id="hardest-list">
+          <h3>🔥 Questions les plus souvent ratées</h3>
+          <div id="hardest-rows">
+            <!-- Injecté par app.js -->
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <button class="btn btn-outline" onclick="resetStats()">🗑 Réinitialiser les stats</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
